@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>S.T.A.L.K.E.R Docs</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+				color: #fafafa;
+				font-family: 'Play', 'Sans-Serif';
+				font-size: 1.1rem;
+			}
+
+			.full-width {
+				width: 21cm;
+			}
+
+			.full-height {
+				height: 29.7cm;
+			}
+
+			.flex-horizontal {
+				display: flex;
+			}
+
+			.flex-vertical {
+				display: flex;
+				flex-direction: column;
+			}
+
+			.page {
+				background-image: url('pageback.jpg');
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+
+			.page > .box, .page > .box > * {
+				height: 28.1cm;
+			}
+
+			.page > .box > .left, .page > .box > .right {
+				width: .8cm;
+				background-image: url('border.jpg');
+			}
+
+			.page > .box > .box {
+				width: 20.4cm;
+				margin: .3cm;
+			}
+
+			.inner.table {
+				background-image: url('textback.jpg');
+			}
+
+			.inner {
+				padding: .175cm;
+				margin: .375cm;
+			}
+
+			.inner.full-width {
+				width: 17.7cm;
+			}
+
+			.inner > .title {
+				font-size: 2.25rem;
+				font-weight: bold;
+			}
+
+			.text-center {
+				text-align: center;
+			}
+
+			td {
+				text-align: left;
+				min-width: 1.2cm;
+			}
+
+			table.last-right > tbody > tr > td:last-child {
+				text-align: right;
+			}
+
+			tr:nth-child(2n) {
+				background-color: #78787899;
+			}
+			tr:nth-child(2n+1) {
+				background-color: #43434399;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="page full-width full-height flex-vertical">
+			<div class="box full-width flex-horizontal">
+				<div class="left"></div>
+				<div class="box">
+					<div class="inner full-width text-center"><h1 class="title">Основные Механики</h1></div>
+					<div class="flex-horizontal no-margin">
+						<div class=inner>
+							<h1 class="sub-title">Проверка</h1>
+							<p>D20 + модификатор умения, если вы в этом умелы + модификатор характеристики >= Класс сложности</p>
+							<h1 class="sub-title">Двойная проверка</h1>
+							<p>2D20 + модификатор умения, если вы умелы хотя бы по одному направлению + модификаторы обоих характеристик >= Сумма классов сложности</p>
+						</div>
+						<div class="inner table text-center">
+							<h1 class="sub-title">Класс Сложности</h1>
+							<table class="last-right">
+								<tr><td>Очень легко
+								</td><td>0
+								</td></tr>
+								<tr><td>Легко
+								</td><td>5
+								</td></tr>
+								<tr><td>Средне
+								</td><td>10
+								</td></tr>
+								<tr><td>Непросто
+								</td><td>15
+								</td></tr>
+								<tr><td>Вызывающе
+								</td><td>20
+								</td></tr>
+								<tr><td>Тяжело 
+								</td><td>25
+								</td></tr>
+								<tr><td>Очень тяжело
+								</td><td>30
+								</td></tr>
+								<tr><td>Маловероятно
+								</td><td>35
+								</td></tr>
+								<tr><td>Невозможно
+								</td><td>40
+								</td></tr>
+							</table>
+						</div>
+					</div>
+					<div class="inner table text-center">
+						<h1 class="sub-title">Характеристики Персонажа</h1>
+						<table>
+							<tr><td>S -
+							</td><td>Strength - сила персонажа. Ваша атлетичность и физическая мощь. Используется при поднятии предметов, их разрушении, удерживании. Определяет то, сколько вы можете унести при обычном темпе ходьбы и силу удара в рукопашном или ножевом бою. Она поможет вам спастись пока вы висите на краю пропасти или вас туда сталкивают, устоять и/или удержать перед чем-то тяжелым.
+							</td></tr>
+							<tr><td>T -
+							</td><td>Toughtness - выносливость персонажа.
+							</td></tr>
+							<tr><td>A -
+							</td><td>Agility - ловкость персонажа.
+							</td></tr>
+							<tr><td>L -
+							</td><td>Learning - восприимчивость персонажа к новой информации.
+							</td></tr>
+							<tr><td>K -
+							</td><td>Knowledge - начитанность персонажа.
+							</td></tr>
+							<tr><td>E -
+							</td><td>Eloquent - красноречивость персонажа.
+							</td></tr>
+							<tr><td>R -
+							</td><td>Reliable - надежность и тщательность персонажа.
+							</td></tr>
+						</table>
+					</div>
+				</div>
+				<div class="right"></div>
+			</div>
+		</div>
+	</body>
+</html>
