@@ -1,0 +1,83 @@
+* {
+	padding: 0;
+	margin: 0;
+	color: #fafafa;
+	font-family: 'Play', 'Sans-Serif';
+	font-size: 1.1rem;
+}
+
+.full-width {
+	width: 21cm;
+}
+
+.full-height {
+	height: 29.7cm;
+}
+
+.flex-horizontal {
+	display: flex;
+}
+
+.flex-vertical {
+	display: flex;
+	flex-direction: column;
+}
+
+.page {
+	background-image: url('pageback.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.page > .box, .page > .box > * {
+	height: 28.1cm;
+}
+
+.page > .box > .left, .page > .box > .right {
+	width: .8cm;
+	background-image: url('border.jpg');
+}
+
+.page > .box > .box {
+	width: 20.4cm;
+	margin: .3cm;
+}
+
+.inner.table {
+	background-image: url('textback.jpg');
+}
+
+.inner {
+	padding: .175cm;
+	margin: .375cm;
+}
+
+.inner.full-width {
+	width: 17.7cm;
+}
+
+.inner > .title {
+	font-size: 2.25rem;
+	font-weight: bold;
+}
+
+.text-center {
+	text-align: center;
+}
+
+td {
+	text-align: left;
+	min-width: 1.2cm;
+}
+
+table.last-right > tbody > tr > td:last-child {
+	text-align: right;
+}
+
+tr:nth-child(2n) {
+	background-color: #78787899;
+}
+
+tr:nth-child(2n+1) {
+	background-color: #43434399;
+}

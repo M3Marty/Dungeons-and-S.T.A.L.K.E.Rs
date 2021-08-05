@@ -6,90 +6,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
-		<style>
-			* {
-				padding: 0;
-				margin: 0;
-				color: #fafafa;
-				font-family: 'Play', 'Sans-Serif';
-				font-size: 1.1rem;
-			}
-
-			.full-width {
-				width: 21cm;
-			}
-
-			.full-height {
-				height: 29.7cm;
-			}
-
-			.flex-horizontal {
-				display: flex;
-			}
-
-			.flex-vertical {
-				display: flex;
-				flex-direction: column;
-			}
-
-			.page {
-				background-image: url('pageback.jpg');
-				background-repeat: no-repeat;
-				background-size: cover;
-			}
-
-			.page > .box, .page > .box > * {
-				height: 28.1cm;
-			}
-
-			.page > .box > .left, .page > .box > .right {
-				width: .8cm;
-				background-image: url('border.jpg');
-			}
-
-			.page > .box > .box {
-				width: 20.4cm;
-				margin: .3cm;
-			}
-
-			.inner.table {
-				background-image: url('textback.jpg');
-			}
-
-			.inner {
-				padding: .175cm;
-				margin: .375cm;
-			}
-
-			.inner.full-width {
-				width: 17.7cm;
-			}
-
-			.inner > .title {
-				font-size: 2.25rem;
-				font-weight: bold;
-			}
-
-			.text-center {
-				text-align: center;
-			}
-
-			td {
-				text-align: left;
-				min-width: 1.2cm;
-			}
-
-			table.last-right > tbody > tr > td:last-child {
-				text-align: right;
-			}
-
-			tr:nth-child(2n) {
-				background-color: #78787899;
-			}
-			tr:nth-child(2n+1) {
-				background-color: #43434399;
-			}
-		</style>
+		<link href="style.css" rel="stylesheet">
 	</head>
 	<body>
 		<div class="page full-width full-height flex-vertical">
@@ -144,10 +61,10 @@
 							</td><td>Strength - сила персонажа. Ваша атлетичность и физическая мощь. Используется при поднятии предметов, их разрушении, удерживании. Определяет то, сколько вы можете унести при обычном темпе ходьбы и силу удара в рукопашном или ножевом бою. Она поможет вам спастись пока вы висите на краю пропасти или вас туда сталкивают, устоять и/или удержать перед чем-то тяжелым.
 							</td></tr>
 							<tr><td>T -
-							</td><td>Toughtness - выносливость персонажа.
+							</td><td>Toughtness - выносливость персонажа. Она определяет ваше здоровье и крепость. Обычно вы будете использовать её что бы задерживать дыхание, совершать долгие походы, выполнять напряженную деятельность. Она поможет если вы сопротивляетесь болезни, яду или усталости, терпите боль. Также она определяет ваши хитпоинты.
 							</td></tr>
 							<tr><td>A -
-							</td><td>Agility - ловкость персонажа.
+							</td><td>Agility - ловкость персонажа. Она определяет гибкость тела, рефлексы и баланс. Она поможет выстрелить с бедра, метнуть нож или завязать узел. С её помощью можно выпутаться из пут и пройти по шаткой поверхности, увернуться от выстрела. Также она определяет вашу инициативу.
 							</td></tr>
 							<tr><td>L -
 							</td><td>Learning - восприимчивость персонажа к новой информации.
